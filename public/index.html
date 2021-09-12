@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBixvSkuaOQNKZC4JKpb0b1dC36y2OFJJ0&libraries=places">
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="script.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <img class="hint" id="icon" width="100" height="100"></img>
+            </div>
+        </div>
+        <div class="content">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="general-information">
+                <div class="status" data-status>Enter A Location</div>
+                <div class="location" data-location>To Find The Weather</div>
+            </div>
+            <div class="detail-section">
+                <div class="detail">
+                    <div class="title">Wind</div>
+                    <div class="value hint" data-wind>TBD</div>
+                </div>
+                <div class="detail bordered">
+                    <div class="title">Temperature</div>
+                    <div class="value hint" data-temperature>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Precipitation</div>
+                    <div class="value hint" data-precipitation>TBD</div>
+                </div>
+                <div class="detail bordered">
+                    <div class="title">Humidity</div>
+                    <div class="value hint" data-humidity>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Pressure</div>
+                    <div class="value hint" data-pressure>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Max Temperature</div>
+                    <div class="value hint" data-max_temp>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Min Temperature</div>
+                    <div class="value hint" data-min_temp>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Avg Temperature</div>
+                    <div class="value hint" data-avg_temp>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Observation Time</div>
+                    <div class="value hint" data-observation_time>TBD</div>
+                </div>
+            </div>
+            <div class="city-search-container">
+                <input type="text" class="city-search" id="search" data-city-search placeholder="Enter Location">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
