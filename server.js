@@ -21,7 +21,7 @@ app.post('/weather', (req, res) => {
     const valInput = req.body.valueInput;
     const urlFetch = `http://api.weatherstack.com/forecast?access_key=${STORMGLASS_API_KEY}&query=${req.body.valueInput}`;
     const params = {
-        access_key: '12c9459077cd00c76609e3934afe7929',
+        access_key: STORMGLASS_API_KEY,
         query: valInput
     }
 

@@ -18,7 +18,7 @@ app.post('/weather', function (req, res) {
   var valInput = req.body.valueInput;
   var urlFetch = "http://api.weatherstack.com/forecast?access_key=".concat(STORMGLASS_API_KEY, "&query=").concat(req.body.valueInput);
   var params = {
-    access_key: '12c9459077cd00c76609e3934afe7929',
+    access_key: STORMGLASS_API_KEY,
     query: valInput
   };
   axios.get(urlFetch, params).then(function (response) {
